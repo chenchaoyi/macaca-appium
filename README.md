@@ -27,3 +27,29 @@ $ ./node_modules/.bin/macaca --verbose server -p 4723
 
 * Now you can run your Appium test just as it is, Macaca server replaces Appium server, and you are all set to see your tests running with XCUItest instead of the deprecated UIAutomator underlayer.
 
+## Inspector ##
+Macaca provides a [Web based inspector]
+(macacajs.github.io/macaca/inspector.html) for you to locate App elements,
+just like the Appium UI inspector.
+
+To try it out:
+
+* Create a new folder:
+```bash
+$ mkdir macaca-inspector
+$ cd macaca-inspector
+```
+* Install macaca client (I don't recommend to install it globally):
+```bash
+$ npm install app-inspector
+```
+* Use it (for iOS)
+```bash
+# Get the UDID of your simulator
+$ xcrun simctl list
+# Start your selected simulator
+$ open -a Simulator --args -CurrentDeviceUDID "${this.deviceId}"
+# Start Macaca inspector, then point your browser to the address as showed in the terminal
+$ ./node_modules/.bin/app-inspector -u "${this.deviceId}"
+```
+
