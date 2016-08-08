@@ -1,8 +1,16 @@
 # Introduction ##
 #### A brief introduction of how to use [Macaca](macacajs.github.io/macaca/) to run [Appium](http://appium.io/) test
 
-Appium has been around for 5 years, yet I couldn't find any alternative solution until Macaca was introduced last year. This repo provides simple instructions on setup Macaca locally to run your existed Appium tests.
+Appium has been around for 5 years, yet I couldn't find any alternative solution until Macaca was introduced last year. 
 
+This repo provides simple instructions on setup Macaca locally to run your existed Appium tests.
+
+## Why ##
+* The Automation instrument has been removed from Instruments since Xcode 8 beta 2. While Appium still struggles to migrate to use XCUItest underlayer, Macaca has already done the switch.
+
+* Macaca supports multiple selenium sessions in single test.
+
+The following instruction is for **iOS**.
 
 ## Installation ##
 * Install [Node.js >= v0.12.x and npm](http://nodejs.org/)
@@ -15,6 +23,11 @@ $ cd macaca-tryout
 ```bash
 $ npm install macaca-cli
 ```
+* Install macaca iOS driver
+```bash
+$ npm install macaca-ios
+```
+
 And that's it, all setup is done.
 
 ## Usage ##
