@@ -6,11 +6,11 @@ Appium has been around for 5 years, yet I couldn't find any alternative solution
 This repo provides simple instructions on setup Macaca locally to run your existed Appium tests.
 
 ## Why ##
-* The Automation instrument has been removed from Instruments since Xcode 8 beta 2. While Appium still struggles to migrate to use XCUItest underlayer, Macaca has already done the switch.
+* The Automation instrument has been removed from Instruments since Xcode 8 beta 2. While Appium still struggles to migrate to XCUItest underlayer, Macaca has already done the switch.
 
 * Macaca supports multiple selenium sessions in single test.
 
-The following instruction is for **iOS**.
+The following instruction is for **iOS** for now.
 
 ## Installation ##
 * Install [Node.js >= v0.12.x and npm](http://nodejs.org/)
@@ -19,11 +19,11 @@ The following instruction is for **iOS**.
 $ mkdir macaca-tryout
 $ cd macaca-tryout
 ```
-* Install macaca client:
+* Install macaca client locally:
 ```bash
 $ npm install macaca-cli
 ```
-* Install macaca iOS driver
+* Install macaca iOS driver locally
 ```bash
 $ npm install macaca-ios
 ```
@@ -38,7 +38,7 @@ And that's it, all setup is done.
 $ ./node_modules/.bin/macaca server --verbose -p 4723
 ```
 
-* Now you can run your Appium test just as it is, Macaca server replaces Appium server, and you are all set to see your tests running with XCUItest instead of the deprecated UIAutomator underlayer.
+* Now you can run your Appium test just as it is. Macaca server replaces Appium server, and you are all set to see your tests running with XCUItest instead of the deprecated UIAutomator underlayer.
 
 ## Inspector ##
 Macaca provides a [Web based inspector]
