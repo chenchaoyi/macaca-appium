@@ -35,7 +35,7 @@ And that's it, all setup is done.
 * Start macaca server on Appium server port:
 
 ```bash
-$ ./node_modules/.bin/macaca --verbose server -p 4723
+$ ./node_modules/.bin/macaca server --verbose -p 4723
 ```
 
 * Now you can run your Appium test just as it is, Macaca server replaces Appium server, and you are all set to see your tests running with XCUItest instead of the deprecated UIAutomator underlayer.
