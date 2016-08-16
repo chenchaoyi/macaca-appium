@@ -1,7 +1,7 @@
 # Introduction ##
 #### A brief introduction of 
 * How to use [Macaca](macacajs.github.io/macaca/) to run [Appium](http://appium.io/) test
-* How to work around Appium to use XCUItest underlayer
+* [How to work around Appium to use XCUItest underlayer](#setup-appium-to-use-xcuitest)
 
 Appium has been around for 5 years, yet I couldn't find any alternative solution until Macaca was introduced last year. 
 
