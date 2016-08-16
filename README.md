@@ -1,9 +1,11 @@
 # Introduction ##
-#### A brief introduction of how to use [Macaca](macacajs.github.io/macaca/) to run [Appium](http://appium.io/) test
+#### A brief introduction of 
+* How to use [Macaca](macacajs.github.io/macaca/) to run [Appium](http://appium.io/) test
+* How to work around Appium to use XCUItest underlayer
 
 Appium has been around for 5 years, yet I couldn't find any alternative solution until Macaca was introduced last year. 
 
-This repo provides simple instructions on setup Macaca locally to run your existed Appium tests.
+This repo provides simple instructions on setup Macaca locally to run your existed Appium tests, as well as setup Appium to use XCUItest underlayer if you would like to stick with Appium.
 
 ## Why ##
 * The Automation instrument has been removed from Instruments since Xcode 8 beta 2. While Appium still struggles to migrate to XCUItest underlayer, Macaca has already done the switch.
@@ -40,7 +42,7 @@ $ ./node_modules/.bin/macaca server --verbose -p 4723
 
 * Now you can run your Appium test just as it is. Macaca server replaces Appium server, and you are all set to see your tests running with XCUItest instead of the deprecated UIAutomator underlayer.
 
-## Inspector ##
+## Macaca Inspector ##
 Macaca provides a [Web based inspector]
 (macacajs.github.io/macaca/inspector.html) for you to locate App elements,
 just like the Appium UI inspector.
@@ -66,3 +68,18 @@ $ open -a Simulator --args -CurrentDeviceUDID "${this.deviceId}"
 $ ./node_modules/.bin/app-inspector -u "${this.deviceId}"
 ```
 
+## Setup Appium to use XCUItest ##
+### Start Appium from latest source ###
+```bash
+# Clone Appium repo and install node modules
+$ git clone git@github.com:appium/appium.git
+$ cd appium
+$ npm install
+$ ./node_modules/.bin/gulp transpile
+# Install webpack
+$ npm install webpack-dev-server -g
+# Start Appium server
+$ node .
+```
+### Run test with XCUItest ###
+Add `"automationName": "xcuitest"` to capabilities, then you are ready to run your Appium test with XCUItest underlayer.
