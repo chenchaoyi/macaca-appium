@@ -7,6 +7,9 @@ Appium has been around for 5 years, yet I couldn't find any alternative solution
 
 This repo provides simple instructions on setup Macaca locally to run your existed Appium tests, as well as [setup Appium to use XCUItest underlayer](#setup-appium-to-use-xcuitest) if you would like to stick with Appium.
 
+## Note ##
+Disconnect your VPN before starting Macaca or Appium XCUItest server, it confuses on network interfaces otherwise.
+
 ## Why ##
 * The Automation instrument has been removed from Instruments since Xcode 8 beta 2. While Appium still struggles to migrate to XCUItest underlayer, Macaca has already done the switch.
 
