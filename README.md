@@ -87,6 +87,10 @@ $ node .
 ```
 ### Run test with XCUItest ###
 * Add `"automationName": "xcuitest"` to capabilities, then you are ready to run your Appium test with XCUItest underlayer.
-* For XPath, the previous `UIA` class name needs to be changed to `XCUIElementType` class name. e.g.: `UIATableCell -> XCUIElementTypeCell`
+* For XPath, the previous `UIA` class name needs to be changed to `XCUIElementType` class name. 
+
+Some mappings that need to pay attention:
+* `UIATableCell -> XCUIElementTypeCell`
+
  
 For a full list of reference, please refer to [this](http://masilotti.com/xctest-documentation/Constants/XCUIElementType.html).
