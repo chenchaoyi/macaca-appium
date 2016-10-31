@@ -48,7 +48,7 @@ $ ./node_modules/.bin/macaca server --verbose -p 4723
 
 ## Macaca Inspector ##
 Macaca provides a [Web based inspector]
-(macacajs.github.io/macaca/inspector.html) for you to locate App elements,
+(https://macacajs.github.io/app-inspector/) for you to locate App elements,
 just like the Appium UI inspector.
 
 To try it out:
