@@ -1,3 +1,7 @@
+# Note
+For more of how to inspect iOS 10 app after update to Appium 1.6, now you can refer to [this article](https://medium.com/@chenchaoyi/the-options-of-inspecting-ios-10-app-with-appium-1-6-534ba166b958#.vt1z15fp6).
+
+
 # Introduction ##
 #### A brief introduction of 
 * How to use [Macaca](macacajs.github.io/macaca/) to run [Appium](http://appium.io/) test
